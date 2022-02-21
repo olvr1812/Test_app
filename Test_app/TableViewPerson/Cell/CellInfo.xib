@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellInfoID" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellInfoID" rowHeight="148" id="8cS-at-lai" customClass="CellInfo" customModule="Test_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8cS-at-lai" id="Fj2-YO-WMx">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATK-tI-tC0" userLabel="NameTextField">
+                        <rect key="frame" x="10" y="10" width="203" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Abf-ls-YLy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62J-e6-gQz">
+                        <rect key="frame" x="13" y="12" width="33.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="wdz-iQ-t7Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLW-eE-y3E" userLabel="AgeTextField">
+                        <rect key="frame" x="10" y="80" width="203" height="60"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="AOH-0b-XRn"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="ccy-N3-7YZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msJ-G0-cVz">
+                        <rect key="frame" x="13" y="82" width="65.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="1HL-ke-rS5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kLW-eE-y3E" firstAttribute="top" secondItem="ATK-tI-tC0" secondAttribute="bottom" constant="10" id="6JD-fp-XKG"/>
+                    <constraint firstItem="kLW-eE-y3E" firstAttribute="leading" secondItem="Fj2-YO-WMx" secondAttribute="leading" constant="10" id="6d3-Ge-h7x"/>
+                    <constraint firstItem="ATK-tI-tC0" firstAttribute="top" secondItem="Fj2-YO-WMx" secondAttribute="top" constant="10" id="75R-OG-1g8"/>
+                    <constraint firstItem="msJ-G0-cVz" firstAttribute="top" secondItem="ATK-tI-tC0" secondAttribute="bottom" constant="12" id="Jqu-XZ-lNY"/>
+                    <constraint firstItem="msJ-G0-cVz" firstAttribute="leading" secondItem="Fj2-YO-WMx" secondAttribute="leading" constant="13" id="M0Q-fZ-f2e"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kLW-eE-y3E" secondAttribute="trailing" constant="200" id="QLI-xe-13l"/>
+                    <constraint firstItem="62J-e6-gQz" firstAttribute="leading" secondItem="Fj2-YO-WMx" secondAttribute="leading" constant="13" id="UqB-Ib-txi"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ATK-tI-tC0" secondAttribute="trailing" constant="200" id="gNo-Fj-b7S"/>
+                    <constraint firstItem="62J-e6-gQz" firstAttribute="top" secondItem="Fj2-YO-WMx" secondAttribute="top" constant="12" id="njt-RI-pqJ"/>
+                    <constraint firstItem="ATK-tI-tC0" firstAttribute="leading" secondItem="Fj2-YO-WMx" secondAttribute="leading" constant="10" id="tJa-5t-bXF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageField" destination="kLW-eE-y3E" id="3Jd-z5-H9N"/>
+                <outlet property="ageLabel" destination="msJ-G0-cVz" id="ZbB-k4-St9"/>
+                <outlet property="nameField" destination="ATK-tI-tC0" id="AKB-0p-faZ"/>
+                <outlet property="nameLabel" destination="62J-e6-gQz" id="2s2-74-uK0"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="115.84821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
